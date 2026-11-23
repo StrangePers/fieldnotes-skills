@@ -1,6 +1,6 @@
 # Fieldnotes Skills
 
-Eight independently installable skills for everyday development and Android reviews. Choose one for the task in front of you. Worked examples use fictional inputs and include an expected result.
+Eleven independently installable skills for everyday development and Android reviews. Choose one for the task in front of you. Worked examples use fictional inputs and include an expected result.
 
 ## Development workflows
 
@@ -9,6 +9,9 @@ Eight independently installable skills for everyday development and Android revi
 | [change-evidence-review](skills/change-evidence-review/SKILL.md) | A PR changed after a passing check. Determine which behavior has evidence on the proposed revision. | [Review a parser that loses an old setting](skills/change-evidence-review/examples/worked-example.md) |
 | [skill-visibility-check](skills/skill-visibility-check/SKILL.md) | A synced skill is missing in Codex. Trace it from the workspace selection to the project and client. | [Compare two sibling checkouts](skills/skill-visibility-check/examples/worked-example.md) |
 | [remote-write-reconciliation](skills/remote-write-reconciliation/SKILL.md) | A remote write timed out. Find out whether it took effect before deciding on a retry. | [Recover a lost task receipt](skills/remote-write-reconciliation/examples/worked-example.md) |
+| [benchmark-comparison-review](skills/benchmark-comparison-review/SKILL.md) | Decide whether a measured speedup holds under comparable conditions. | [Compare indexer runs with cold and warm caches](skills/benchmark-comparison-review/examples/worked-example.md) |
+| [isolated-ui-smoke-check](skills/isolated-ui-smoke-check/SKILL.md) | Test a user action in a disposable profile and verify what happened behind the visible screen. | [Spot the failed request behind an empty list](skills/isolated-ui-smoke-check/examples/worked-example.md) |
+| [analytics-event-validation](skills/analytics-event-validation/SKILL.md) | Check whether the recorded events can answer the question behind a dashboard metric. | [Measure import errors from synthetic events](skills/analytics-event-validation/examples/worked-example.md) |
 
 ## Android
 
