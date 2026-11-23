@@ -1,6 +1,16 @@
 # Fieldnotes Skills
 
-Five independently installable skills for Android developers. Choose one for the review in front of you. The worked examples include fictional inputs and an expected review you can compare with your own.
+Eight independently installable skills for everyday development and Android reviews. Choose one for the task in front of you. Worked examples use fictional inputs and include an expected result.
+
+## Development workflows
+
+| Skill | When to use it | Try it |
+| --- | --- | --- |
+| [change-evidence-review](skills/change-evidence-review/SKILL.md) | A PR changed after a passing check. Determine which behavior has evidence on the proposed revision. | [Review a parser that loses an old setting](skills/change-evidence-review/examples/worked-example.md) |
+| [skill-visibility-check](skills/skill-visibility-check/SKILL.md) | A synced skill is missing in Codex. Trace it from the workspace selection to the project and client. | [Compare two sibling checkouts](skills/skill-visibility-check/examples/worked-example.md) |
+| [remote-write-reconciliation](skills/remote-write-reconciliation/SKILL.md) | A remote write timed out. Find out whether it took effect before deciding on a retry. | [Recover a lost task receipt](skills/remote-write-reconciliation/examples/worked-example.md) |
+
+## Android
 
 | Skill | When to use it | What the review produces |
 | --- | --- | --- |
