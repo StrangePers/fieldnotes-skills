@@ -1,6 +1,6 @@
 # Fieldnotes Skills
 
-Fourteen independently installable skills for everyday development and Android reviews. Choose one for the task in front of you. Worked examples use fictional inputs and include an expected result.
+Seventeen independently installable skills for everyday development and Android reviews. Choose one for the task in front of you. Worked examples use fictional inputs and include an expected result.
 
 ## Development workflows
 
@@ -15,6 +15,9 @@ Fourteen independently installable skills for everyday development and Android r
 | [quickstart-example-check](skills/quickstart-example-check/SKILL.md) | Check whether a new reader can reach the promised result using the published instructions. | [Find the setup step hidden by an SDK test](skills/quickstart-example-check/examples/worked-example.md) |
 | [release-notes-coverage](skills/release-notes-coverage/SKILL.md) | Find user-visible changes and migration steps missing from a release announcement. | [Repair the upgrade note for a renamed CLI flag](skills/release-notes-coverage/examples/worked-example.md) |
 | [shared-test-resource-handoff](skills/shared-test-resource-handoff/SKILL.md) | Decide when the next test job can safely take over a shared resource. | [Hand off a database between two local jobs](skills/shared-test-resource-handoff/examples/worked-example.md) |
+| [project-instruction-drift](skills/project-instruction-drift/SKILL.md) | Find a shared command that has drifted in one checkout. | [One test instruction, two projects](skills/project-instruction-drift/examples/worked-example.md) |
+| [dependency-conflict-triage](skills/dependency-conflict-triage/SKILL.md) | Find the dependency path responsible for a failed install. | [Resolve two incompatible Python requirements](skills/dependency-conflict-triage/examples/worked-example.md) |
+| [regression-test-sensitivity](skills/regression-test-sensitivity/SKILL.md) | Check whether a passing test detects a known defect. | [Make a sorting regression visible](skills/regression-test-sensitivity/examples/worked-example.md) |
 
 ## Android
 
