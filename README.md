@@ -1,6 +1,6 @@
 # Fieldnotes Skills
 
-Eleven independently installable skills for everyday development and Android reviews. Choose one for the task in front of you. Worked examples use fictional inputs and include an expected result.
+Fourteen independently installable skills for everyday development and Android reviews. Choose one for the task in front of you. Worked examples use fictional inputs and include an expected result.
 
 ## Development workflows
 
@@ -12,6 +12,9 @@ Eleven independently installable skills for everyday development and Android rev
 | [benchmark-comparison-review](skills/benchmark-comparison-review/SKILL.md) | Decide whether a measured speedup holds under comparable conditions. | [Compare indexer runs with cold and warm caches](skills/benchmark-comparison-review/examples/worked-example.md) |
 | [isolated-ui-smoke-check](skills/isolated-ui-smoke-check/SKILL.md) | Test a user action in a disposable profile and verify what happened behind the visible screen. | [Spot the failed request behind an empty list](skills/isolated-ui-smoke-check/examples/worked-example.md) |
 | [analytics-event-validation](skills/analytics-event-validation/SKILL.md) | Check whether the recorded events can answer the question behind a dashboard metric. | [Measure import errors from synthetic events](skills/analytics-event-validation/examples/worked-example.md) |
+| [quickstart-example-check](skills/quickstart-example-check/SKILL.md) | Check whether a new reader can reach the promised result using the published instructions. | [Find the setup step hidden by an SDK test](skills/quickstart-example-check/examples/worked-example.md) |
+| [release-notes-coverage](skills/release-notes-coverage/SKILL.md) | Find user-visible changes and migration steps missing from a release announcement. | [Repair the upgrade note for a renamed CLI flag](skills/release-notes-coverage/examples/worked-example.md) |
+| [shared-test-resource-handoff](skills/shared-test-resource-handoff/SKILL.md) | Decide when the next test job can safely take over a shared resource. | [Hand off a database between two local jobs](skills/shared-test-resource-handoff/examples/worked-example.md) |
 
 ## Android
 
