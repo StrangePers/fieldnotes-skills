@@ -1,6 +1,6 @@
 # Fieldnotes Skills
 
-Twenty-three independently installable skills for everyday development and Android reviews. Choose one for the task in front of you. Worked examples use fictional inputs and include an expected result.
+Twenty-six independently installable skills for everyday development and Android reviews. Choose one for the task in front of you. Worked examples use fictional inputs and include an expected result.
 
 ## Development workflows
 
@@ -24,6 +24,9 @@ Twenty-three independently installable skills for everyday development and Andro
 | [component-boundary-trace](skills/component-boundary-trace/SKILL.md) | Find the first boundary at which a correct value disappears. | [Follow one time zone through a queue](skills/component-boundary-trace/examples/worked-example.md) |
 | [keyboard-focus-path-check](skills/keyboard-focus-path-check/SKILL.md) | Trace keyboard focus into a dialog and back to its opener. | [Return to the opener after editing a label](skills/keyboard-focus-path-check/examples/worked-example.md) |
 | [issue-readiness-check](skills/issue-readiness-check/SKILL.md) | Separate a genuine implementation blocker from a related open issue. | [A Ready export ticket with an unresolved format](skills/issue-readiness-check/examples/worked-example.md) |
+| [skill-selection-evaluation](skills/skill-selection-evaluation/SKILL.md) | Measure missed, ambiguous and unwanted skill selections. | [Score two neighboring review skills](skills/skill-selection-evaluation/examples/worked-example.md) |
+| [cli-output-contract-check](skills/cli-output-contract-check/SKILL.md) | Check machine-readable stdout, diagnostics and exit codes. | [A greeting breaks a JSON pipeline](skills/cli-output-contract-check/examples/worked-example.md) |
+| [cross-platform-path-check](skills/cross-platform-path-check/SKILL.md) | Read foreign path syntax without losing the drive or coordinates. | [Read a Windows diagnostic on a POSIX runner](skills/cross-platform-path-check/examples/worked-example.md) |
 
 ## Android
 
