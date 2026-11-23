@@ -1,6 +1,6 @@
 # Fieldnotes Skills
 
-Twenty-six independently installable skills for everyday development and Android reviews. Choose one for the task in front of you. Worked examples use fictional inputs and include an expected result.
+Twenty-nine independently installable skills for everyday development and Android reviews. Choose one for the task in front of you. Worked examples use fictional inputs and include an expected result.
 
 ## Development workflows
 
@@ -27,6 +27,9 @@ Twenty-six independently installable skills for everyday development and Android
 | [skill-selection-evaluation](skills/skill-selection-evaluation/SKILL.md) | Measure missed, ambiguous and unwanted skill selections. | [Score two neighboring review skills](skills/skill-selection-evaluation/examples/worked-example.md) |
 | [cli-output-contract-check](skills/cli-output-contract-check/SKILL.md) | Check machine-readable stdout, diagnostics and exit codes. | [A greeting breaks a JSON pipeline](skills/cli-output-contract-check/examples/worked-example.md) |
 | [cross-platform-path-check](skills/cross-platform-path-check/SKILL.md) | Read foreign path syntax without losing the drive or coordinates. | [Read a Windows diagnostic on a POSIX runner](skills/cross-platform-path-check/examples/worked-example.md) |
+| [package-contents-check](skills/package-contents-check/SKILL.md) | Find assets that exist in the checkout but disappear from the package. | [Find a template missing from an npm archive](skills/package-contents-check/examples/worked-example.md) |
+| [consumer-api-compatibility](skills/consumer-api-compatibility/SKILL.md) | Rebuild an unchanged client against a candidate library. | [Compile the same Java client against two APIs](skills/consumer-api-compatibility/examples/worked-example.md) |
+| [rollout-cohort-check](skills/rollout-cohort-check/SKILL.md) | Compare mature rollout cohorts before recommending expansion. | [Fewer failures during a smaller rollout](skills/rollout-cohort-check/examples/worked-example.md) |
 
 ## Android
 
