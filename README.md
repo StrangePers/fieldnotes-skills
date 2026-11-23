@@ -1,6 +1,6 @@
 # Fieldnotes Skills
 
-Twenty independently installable skills for everyday development and Android reviews. Choose one for the task in front of you. Worked examples use fictional inputs and include an expected result.
+Twenty-three independently installable skills for everyday development and Android reviews. Choose one for the task in front of you. Worked examples use fictional inputs and include an expected result.
 
 ## Development workflows
 
@@ -21,6 +21,9 @@ Twenty independently installable skills for everyday development and Android rev
 | [settings-recovery-check](skills/settings-recovery-check/SKILL.md) | Distinguish first use from corrupt or temporarily unreadable settings. | [Four reads, one dangerous fallback](skills/settings-recovery-check/examples/worked-example.md) |
 | [pagination-continuity-check](skills/pagination-continuity-check/SKILL.md) | Detect duplicate pages and stale cursors after retrying or filtering. | [A retry and a new filter](skills/pagination-continuity-check/examples/worked-example.md) |
 | [async-cancellation-check](skills/async-cancellation-check/SKILL.md) | Check that cancellation preserves the previous completed output. | [Cancel an export after its first chunk](skills/async-cancellation-check/examples/worked-example.md) |
+| [component-boundary-trace](skills/component-boundary-trace/SKILL.md) | Find the first boundary at which a correct value disappears. | [Follow one time zone through a queue](skills/component-boundary-trace/examples/worked-example.md) |
+| [keyboard-focus-path-check](skills/keyboard-focus-path-check/SKILL.md) | Trace keyboard focus into a dialog and back to its opener. | [Return to the opener after editing a label](skills/keyboard-focus-path-check/examples/worked-example.md) |
+| [issue-readiness-check](skills/issue-readiness-check/SKILL.md) | Separate a genuine implementation blocker from a related open issue. | [A Ready export ticket with an unresolved format](skills/issue-readiness-check/examples/worked-example.md) |
 
 ## Android
 
