@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Label editor focus exercise</title>
+<style>
+  :focus-visible { outline: 3px solid #1856ab; outline-offset: 3px; }
+</style>
+<h1>Label editor</h1>
+<p>Current label: <output id="label">Sample</output></p>
+<button id="edit">Edit label</button>
+<button id="activity">View activity</button>
+<dialog aria-labelledby="heading">
+  <h2 id="heading">Edit label</h2>
+  <form method="dialog">
+    <label>Label <input id="draft" autofocus></label>
+    <button>Save</button>
+  </form>
+</dialog>
+<p id="status" aria-live="polite"></p>
+<script>
+  const dialog = document.querySelector("dialog");
+  const edit = document.querySelector("#edit");
+  const activity = document.querySelector("#activity");
+  const draft = document.querySelector("#draft");
+  const label = document.querySelector("#label");
+
+  edit.addEventListener("click", () => {
+    draft.value = label.value;
+    dialog.showModal();
+  });
+  dialog.querySelector("form").addEventListener("submit", () => {
+    label.value = draft.value;
+  });
+  dialog.addEventListener("close", () => {
+    const target = location.hash === "#broken" ? activity : edit;
+    target.focus();
+  });
+  activity.addEventListener("click", () => {
+    document.querySelector("#status").textContent = "No activity to show.";
+  });
+</script>
+</html>
