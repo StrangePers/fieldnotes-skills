@@ -1,6 +1,6 @@
 # Fieldnotes Skills
 
-Twenty-nine independently installable skills for everyday development and Android reviews. Choose one for the task in front of you. Worked examples use fictional inputs and include an expected result.
+Thirty-two independently installable skills for everyday development and Android reviews. Choose one for the task in front of you. Worked examples use fictional inputs and include an expected result.
 
 ## Development workflows
 
@@ -30,6 +30,9 @@ Twenty-nine independently installable skills for everyday development and Androi
 | [package-contents-check](skills/package-contents-check/SKILL.md) | Find assets that exist in the checkout but disappear from the package. | [Find a template missing from an npm archive](skills/package-contents-check/examples/worked-example.md) |
 | [consumer-api-compatibility](skills/consumer-api-compatibility/SKILL.md) | Rebuild an unchanged client against a candidate library. | [Compile the same Java client against two APIs](skills/consumer-api-compatibility/examples/worked-example.md) |
 | [rollout-cohort-check](skills/rollout-cohort-check/SKILL.md) | Compare mature rollout cohorts before recommending expansion. | [Fewer failures during a smaller rollout](skills/rollout-cohort-check/examples/worked-example.md) |
+| [offline-refresh-check](skills/offline-refresh-check/SKILL.md) | Verify cached content during a failed refresh and recovery. | [Keep the last list through a failed refresh](skills/offline-refresh-check/examples/worked-example.md) |
+| [deep-link-resume-check](skills/deep-link-resume-check/SKILL.md) | Keep the requested object through cold startup and sign-in. | [Open the same order after session restoration](skills/deep-link-resume-check/examples/worked-example.md) |
+| [responsive-container-check](skills/responsive-container-check/SKILL.md) | Test action reachability when a pane narrows inside a wide window. | [Save inside a narrow pane in a wide window](skills/responsive-container-check/examples/worked-example.md) |
 
 ## Android
 

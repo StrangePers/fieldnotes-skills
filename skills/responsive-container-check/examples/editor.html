@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Editor pane exercise</title>
+<style>
+  body { font: 1rem system-ui; margin: 1rem; }
+  #pane { container-type: inline-size; width: 600px; max-width: 100%; overflow: hidden; border: 1px solid; margin-top: 1rem; }
+  form { display: flex; align-items: end; gap: .5rem; padding: .5rem; }
+  label { flex: 1 0 19rem; }
+  input { display: block; box-sizing: border-box; width: 100%; }
+  @container (max-width: 24rem) {
+    body:not(.broken) form { display: grid; }
+  }
+</style>
+<h1>Label editor</h1>
+<button id="wide">Wide pane</button>
+<button id="narrow">Narrow pane</button>
+<section id="pane" aria-label="Editor pane">
+  <form>
+    <label>Label <input id="label" value="Example"></label>
+    <button>Save</button>
+  </form>
+</section>
+<p role="status"></p>
+<script>
+  const pane = document.querySelector("#pane");
+  document.body.classList.toggle("broken", location.hash === "#broken");
+  document.querySelector("#wide").onclick = () => { pane.style.width = "600px"; };
+  document.querySelector("#narrow").onclick = () => { pane.style.width = "280px"; };
+  document.querySelector("form").onsubmit = event => {
+    event.preventDefault();
+    document.querySelector("[role=status]").textContent = "Saved " + document.querySelector("#label").value;
+  };
+</script>
+</html>
