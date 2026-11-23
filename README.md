@@ -1,6 +1,6 @@
 # Fieldnotes Skills
 
-Seventeen independently installable skills for everyday development and Android reviews. Choose one for the task in front of you. Worked examples use fictional inputs and include an expected result.
+Twenty independently installable skills for everyday development and Android reviews. Choose one for the task in front of you. Worked examples use fictional inputs and include an expected result.
 
 ## Development workflows
 
@@ -18,6 +18,9 @@ Seventeen independently installable skills for everyday development and Android 
 | [project-instruction-drift](skills/project-instruction-drift/SKILL.md) | Find a shared command that has drifted in one checkout. | [One test instruction, two projects](skills/project-instruction-drift/examples/worked-example.md) |
 | [dependency-conflict-triage](skills/dependency-conflict-triage/SKILL.md) | Find the dependency path responsible for a failed install. | [Resolve two incompatible Python requirements](skills/dependency-conflict-triage/examples/worked-example.md) |
 | [regression-test-sensitivity](skills/regression-test-sensitivity/SKILL.md) | Check whether a passing test detects a known defect. | [Make a sorting regression visible](skills/regression-test-sensitivity/examples/worked-example.md) |
+| [settings-recovery-check](skills/settings-recovery-check/SKILL.md) | Distinguish first use from corrupt or temporarily unreadable settings. | [Four reads, one dangerous fallback](skills/settings-recovery-check/examples/worked-example.md) |
+| [pagination-continuity-check](skills/pagination-continuity-check/SKILL.md) | Detect duplicate pages and stale cursors after retrying or filtering. | [A retry and a new filter](skills/pagination-continuity-check/examples/worked-example.md) |
+| [async-cancellation-check](skills/async-cancellation-check/SKILL.md) | Check that cancellation preserves the previous completed output. | [Cancel an export after its first chunk](skills/async-cancellation-check/examples/worked-example.md) |
 
 ## Android
 
