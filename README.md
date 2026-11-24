@@ -1,6 +1,6 @@
 # Fieldnotes Skills
 
-Thirty-two independently installable skills for everyday development and Android reviews. Choose one for the task in front of you. Worked examples use fictional inputs and include an expected result.
+Thirty-five independently installable skills for everyday development, C++ and Qt, and Android reviews. Choose one for the task in front of you. Worked examples use fictional inputs and include an expected result.
 
 ## Development workflows
 
@@ -33,6 +33,14 @@ Thirty-two independently installable skills for everyday development and Android
 | [offline-refresh-check](skills/offline-refresh-check/SKILL.md) | Verify cached content during a failed refresh and recovery. | [Keep the last list through a failed refresh](skills/offline-refresh-check/examples/worked-example.md) |
 | [deep-link-resume-check](skills/deep-link-resume-check/SKILL.md) | Keep the requested object through cold startup and sign-in. | [Open the same order after session restoration](skills/deep-link-resume-check/examples/worked-example.md) |
 | [responsive-container-check](skills/responsive-container-check/SKILL.md) | Test action reachability when a pane narrows inside a wide window. | [Save inside a narrow pane in a wide window](skills/responsive-container-check/examples/worked-example.md) |
+
+## C++ and Qt
+
+| Skill | When to use it | Try it |
+| --- | --- | --- |
+| [qt-headless-ui-check](skills/qt-headless-ui-check/SKILL.md) | Verify that a click on a virtual display changes application state. | [Trace a filter that still shows two rows](skills/qt-headless-ui-check/examples/worked-example.md) |
+| [cpp-dll-abi-check](skills/cpp-dll-abi-check/SKILL.md) | Run a released Windows client with a replacement DLL and its runtime dependencies. | [Compare three Qt deployments](skills/cpp-dll-abi-check/examples/worked-example.md) |
+| [native-decompiler-crosscheck](skills/native-decompiler-crosscheck/SKILL.md) | Resolve an ambiguous calculation in your own optimized binary. | [Check a sensor reading with its high bit set](skills/native-decompiler-crosscheck/examples/worked-example.md) |
 
 ## Android
 
