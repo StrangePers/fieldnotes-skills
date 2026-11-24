@@ -2,6 +2,8 @@
 
 Thirty-five independently installable skills for everyday development, C++ and Qt, and Android reviews. Choose one for the task in front of you. Worked examples use fictional inputs and include an expected result.
 
+For a ready-to-use C++ and Qt setup, [install the native profile](profiles/native/README.md). It selects nine skills from this library and seventeen from pinned sources. The guide includes OpenCode setup for an existing SVN working copy.
+
 ## Development workflows
 
 | Skill | When to use it | Try it |
@@ -61,3 +63,5 @@ To keep a versioned link to the collection, add this repository as a Git submodu
 ## License
 
 The collection is available under [CC BY 4.0](LICENSE). Suggested credit: Fieldnotes Skills by StrangePers. When sharing an adaptation, identify the changes and include a link to the license.
+
+The optional native profile also fetches Superpowers under MIT and two Fieldnotes Team skills under CC BY 4.0. Their license notices accompany the installed skills. [Pinned sources](profiles/native/sources.json)

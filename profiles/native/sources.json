@@ -1,0 +1,34 @@
+[
+  {
+    "repository": "https://github.com/obra/superpowers.git",
+    "commit": "bb92a77741419a4ab5f06e711a283343f1ada0c3",
+    "skills": [
+      "brainstorming",
+      "diagnosing-superpowers",
+      "dispatching-parallel-agents",
+      "executing-plans",
+      "finishing-a-development-branch",
+      "receiving-code-review",
+      "requesting-code-review",
+      "subagent-driven-development",
+      "systematic-debugging",
+      "test-driven-development",
+      "using-git-worktrees",
+      "using-superpowers",
+      "verification-before-completion",
+      "writing-plans",
+      "writing-skills"
+    ],
+    "license_file": "LICENSE",
+    "tree_sha256": "dde56000b4aaa05bd319993ee0ca7f8740499777bcdf7bfd48d0bdaa30610ac1"
+  },
+  {
+    "repository": "https://github.com/StrangePers/fieldnotes-team.git",
+    "commit": "00da16478fffd7019c49c7c0b14db7f9a943ea39",
+    "skills": [
+      "binary-debug-evidence",
+      "task-brief-and-handoff"
+    ],
+    "tree_sha256": "17466d3294fe8e01ab94551500325602feeee4009cbe7d50146b1582f2e06a86"
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "skill_roots": [
+    ".native-sources/dde56000b4aaa05bd319993ee0ca7f8740499777bcdf7bfd48d0bdaa30610ac1",
+    ".native-sources/17466d3294fe8e01ab94551500325602feeee4009cbe7d50146b1582f2e06a86"
+  ],
+  "mcp": {},
+  "projects": {
+    "native": {
+      "skills": [
+        "brainstorming",
+        "writing-plans",
+        "executing-plans",
+        "systematic-debugging",
+        "test-driven-development",
+        "requesting-code-review",
+        "receiving-code-review",
+        "verification-before-completion",
+        "issue-readiness-check",
+        "change-evidence-review",
+        "task-brief-and-handoff",
+        "binary-debug-evidence",
+        "component-boundary-trace",
+        "consumer-api-compatibility",
+        "regression-test-sensitivity",
+        "diagnosing-superpowers",
+        "dispatching-parallel-agents",
+        "finishing-a-development-branch",
+        "subagent-driven-development",
+        "using-git-worktrees",
+        "using-superpowers",
+        "writing-skills",
+        "package-contents-check",
+        "qt-headless-ui-check",
+        "cpp-dll-abi-check",
+        "native-decompiler-crosscheck"
+      ],
+      "mcp": [],
+      "notes": "profiles/native/notes"
+    }
+  }
+}
