@@ -1,13 +1,15 @@
 # Fieldnotes Skills
 
-Thirty-five independently installable skills for everyday development, C++ and Qt, and Android reviews. Choose one for the task in front of you. Worked examples use fictional inputs and include an expected result.
+Thirty-seven independently installable skills for everyday development, C++ and Qt, and Android reviews. Choose one for the task in front of you. Worked examples use fictional inputs and include an expected result.
 
-For a ready-to-use C++ and Qt setup, [install the native profile](profiles/native/README.md). It selects nine skills from this library and seventeen from pinned sources. The guide includes OpenCode setup for an existing SVN working copy.
+For a ready-to-use C++ and Qt setup, [install the native profile](profiles/native/README.md). It selects eleven skills from this library and fifteen from a pinned Superpowers release. The guide includes OpenCode setup for an existing SVN working copy.
 
 ## Development workflows
 
 | Skill | When to use it | Try it |
 | --- | --- | --- |
+| [task-brief-and-handoff](skills/task-brief-and-handoff/SKILL.md) | Define acceptance for an agreed task and hand the reviewer a revision and a reproducible check. | Hand off a fix for clearing a search filter. |
+| [binary-debug-evidence](skills/binary-debug-evidence/SKILL.md) | Match a crash in your own release to the binary, symbols and source revision. | Select the matching symbol file from two builds. |
 | [change-evidence-review](skills/change-evidence-review/SKILL.md) | A PR changed after a passing check. Determine which behavior has evidence on the proposed revision. | [Review a parser that loses an old setting](skills/change-evidence-review/examples/worked-example.md) |
 | [skill-visibility-check](skills/skill-visibility-check/SKILL.md) | A synced skill is missing in Codex. Trace it from the workspace selection to the project and client. | [Compare two sibling checkouts](skills/skill-visibility-check/examples/worked-example.md) |
 | [remote-write-reconciliation](skills/remote-write-reconciliation/SKILL.md) | A remote write timed out. Find out whether it took effect before deciding on a retry. | [Recover a lost task receipt](skills/remote-write-reconciliation/examples/worked-example.md) |
@@ -64,4 +66,4 @@ To keep a versioned link to the collection, add this repository as a Git submodu
 
 The collection is available under [CC BY 4.0](LICENSE). Suggested credit: Fieldnotes Skills by StrangePers. When sharing an adaptation, identify the changes and include a link to the license.
 
-The optional native profile also fetches Superpowers under MIT and two Fieldnotes Team skills under CC BY 4.0. Their license notices accompany the installed skills. [Pinned sources](profiles/native/sources.json)
+The optional native profile also fetches Superpowers under MIT. Each installed Superpowers skill includes its license. [Pinned source](profiles/native/sources.json)

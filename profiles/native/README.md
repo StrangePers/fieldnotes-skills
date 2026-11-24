@@ -63,8 +63,7 @@ The first check previews changes. The final check should print `0 file(s) to cha
 
 | Skills | Source |
 | --- | --- |
-| 9 Fieldnotes Skills | The current checkout of this library. The selected IDs are in [workspace.json](../../workspace.json). |
+| 11 Fieldnotes Skills | The current checkout of this library, including [task-brief-and-handoff](../../skills/task-brief-and-handoff/SKILL.md) and [binary-debug-evidence](../../skills/binary-debug-evidence/SKILL.md). Both include their original CC BY 4.0 notices. The selected IDs are in [workspace.json](../../workspace.json). |
 | 15 Superpowers workflows | [Superpowers v7.0.0](https://github.com/obra/superpowers/tree/bb92a77741419a4ab5f06e711a283343f1ada0c3/skills). Each installed directory includes the MIT license. |
-| `task-brief-and-handoff`, `binary-debug-evidence` | [Fieldnotes Team snapshot](https://github.com/StrangePers/fieldnotes-team/tree/00da16478fffd7019c49c7c0b14db7f9a943ea39/skills). Both include their CC BY 4.0 notices. |
 
-Preparation fetches the commits in the [source lock](sources.json), checks the selected files against their SHA-256 tree digests and stores them in the library's ignored `.native-sources/` directory. Subsequent runs verify and reuse matching cached files offline. The team repository's own submodule is not fetched.
+Preparation fetches the Superpowers commit in the [source lock](sources.json), checks the selected files against their SHA-256 tree digest and stores them in the library's ignored `.native-sources/` directory. Subsequent runs verify and reuse matching cached files offline.
