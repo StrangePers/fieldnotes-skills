@@ -27,13 +27,23 @@ Run OpenCode from that root. To check all 26 IDs and where OpenCode found them, 
 ```powershell
 $root = (Resolve-Path '../fieldnotes-skills-native/.agents/skills').Path + '\'
 $expected = (Get-Content -Raw '../fieldnotes-skills/workspace.json' | ConvertFrom-Json).projects.native.skills
-$result = opencode.cmd api GET /api/skill --header "x-opencode-directory: $((Get-Location).Path)" | ConvertFrom-Json
-$native = @($result.data | Where-Object { $_.path -and $_.path.Replace('/', '\').StartsWith($root, [StringComparison]::OrdinalIgnoreCase) })
-$native.Count
-Compare-Object $expected @($native | ForEach-Object id)
+$deadline = (Get-Date).AddMinutes(2)
+do {
+    $result = opencode.cmd api GET /api/skill --header "x-opencode-directory: $((Get-Location).Path)" | ConvertFrom-Json
+    if ($LASTEXITCODE -ne 0) { throw 'OpenCode skill query failed.' }
+    $native = @($result.data | Where-Object { $_.path -and $_.path.Replace('/', '\').StartsWith($root, [StringComparison]::OrdinalIgnoreCase) })
+    $difference = @(Compare-Object $expected @($native | ForEach-Object id))
+    if ($difference.Count -eq 0) { break }
+    Start-Sleep -Seconds 2
+} while ((Get-Date) -lt $deadline)
+if ($difference.Count) {
+    $difference
+    throw "OpenCode found $($native.Count) profile skills. Check the skills path in opencode.jsonc."
+}
+"OpenCode sees all $($native.Count) native skills."
 ```
 
-Expect `26` followed by no differences. If the first request returns an empty list while OpenCode starts, repeat the check.
+Expect `OpenCode sees all 26 native skills.` The check allows time for discovery at startup and excludes skills loaded from other directories.
 
 ## Update
 
