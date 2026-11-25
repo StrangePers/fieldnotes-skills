@@ -2,7 +2,9 @@
 
 Fieldnotes Skills is a shared library of 37 development workflows for everyday engineering, C++ and Qt, and Android. For example, an agent can use `cpp-dll-abi-check` to check a replacement DLL against a released client, or `task-brief-and-handoff` to prepare a change for review. Each skill describes when to use it.
 
-To let OpenCode choose from the whole library, [connect the standalone catalog](#standalone-catalog-in-opencode). One clone can serve several projects, including SVN working copies.
+[Choose a catalog with or without Android](https://strangepers.github.io/fieldnotes-skills/?lang=en). The setup page lists the selected skills and gives OpenCode installation, verification and update commands for each edition. [Русская версия](https://strangepers.github.io/fieldnotes-skills/?lang=ru).
+
+The standalone catalog includes 29 development workflows and 3 C++ and Qt skills. The Android edition adds 5 workflows, including localized screenshot review. For the full library, you can also [use the README instructions](#standalone-catalog-in-opencode). One clone can serve several projects, including SVN working copies.
 
 For a ready-to-use C++ and Qt setup, [install the native profile](profiles/native/README.md). It selects eleven skills from this library and fifteen from a pinned Superpowers release. The guide includes OpenCode setup for an existing SVN working copy.
 
