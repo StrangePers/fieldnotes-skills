@@ -1,5 +1,5 @@
 binary-debug-evidence by StrangePers
-https://github.com/StrangePers/fieldnotes-team/tree/main/skills/binary-debug-evidence
+https://github.com/StrangePers/fieldnotes-team/tree/00da16478fffd7019c49c7c0b14db7f9a943ea39/skills/binary-debug-evidence
 
 Licensed under Creative Commons Attribution 4.0 International (CC BY 4.0).
 https://creativecommons.org/licenses/by/4.0/
