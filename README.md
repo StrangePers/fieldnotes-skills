@@ -1,6 +1,8 @@
 # Fieldnotes Skills
 
-Thirty-seven independently installable skills for everyday development, C++ and Qt, and Android reviews. Choose one for the task in front of you. Worked examples use fictional inputs and include an expected result.
+Fieldnotes Skills is a shared library of 37 development workflows for everyday engineering, C++ and Qt, and Android. For example, an agent can use `cpp-dll-abi-check` to check a replacement DLL against a released client, or `task-brief-and-handoff` to prepare a change for review. Each skill describes when to use it.
+
+To let OpenCode choose from the whole library, [connect the standalone catalog](#standalone-catalog-in-opencode). One clone can serve several projects, including SVN working copies.
 
 For a ready-to-use C++ and Qt setup, [install the native profile](profiles/native/README.md). It selects eleven skills from this library and fifteen from a pinned Superpowers release. The guide includes OpenCode setup for an existing SVN working copy.
 
@@ -55,6 +57,52 @@ For a ready-to-use C++ and Qt setup, [install the native profile](profiles/nativ
 | [android-localization-resource-review](skills/android-localization-resource-review/SKILL.md) | A change touches translated strings or plurals. | Sample inputs that expose a missing argument or a wrong quantity form. [Review a Slovak translation diff](skills/android-localization-resource-review/examples/worked-example.md). |
 | [android-release-artifact-check](skills/android-release-artifact-check/SKILL.md) | A release bundle was rebuilt and you need to know which artifact passed testing. | A trace from the selected AAB to the tested APK set, or the specific step to repeat. [Compare two bundles with the same version](skills/android-release-artifact-check/examples/worked-example.md). |
 | [android-anr-triage](skills/android-anr-triage/SKILL.md) | An Android Application Not Responding report arrives with partial thread or rollout evidence. | A bounded diagnosis and one measurement that could resolve it. [Investigate a late thread sample](skills/android-anr-triage/examples/worked-example.md). |
+
+## Standalone catalog in OpenCode
+
+With Git and OpenCode CLI installed, open PowerShell in the **root of your project**. Clone the library next to it once. Projects under the same parent can share that clone.
+
+```powershell
+git clone https://github.com/StrangePers/fieldnotes-skills.git ../fieldnotes-skills
+```
+
+Create `opencode.jsonc` in the project root with the following content. If you already have `opencode.json` or `opencode.jsonc`, add the path to its existing `skills` array and keep the other settings.
+
+```json
+{
+  "skills": ["../fieldnotes-skills/skills"]
+}
+```
+
+OpenCode can now select skills from their descriptions. To verify discovery from **this project**, run the following in PowerShell. It compares IDs and paths with the clone so global skills do not affect the result.
+
+```powershell
+$sources = @('../fieldnotes-skills/skills')
+$paths = @{}
+foreach ($source in $sources) {
+    Get-ChildItem -LiteralPath $source -Directory | ForEach-Object {
+        $file = Join-Path $_.FullName 'SKILL.md'
+        if (Test-Path -LiteralPath $file) { $paths[$_.Name] = $file }
+    }
+}
+$cli = Get-Command opencode.cmd, opencode.exe -CommandType Application -ErrorAction SilentlyContinue | Select-Object -First 1
+$result = & $cli.Source api GET /api/skill --header "x-opencode-directory: $((Get-Location).Path)" | ConvertFrom-Json
+$found = @($result.data | Where-Object { $_.path -and $paths.ContainsKey($_.id) -and $_.path.Replace('/', '\') -ieq $paths[$_.id] } | ForEach-Object id)
+"$($found.Count)/$($paths.Count) skills"
+Compare-Object @($paths.Keys) $found
+```
+
+The current library reports `37/37 skills` followed by no differences. If OpenCode is starting up, repeat the check after a few seconds. To update all projects sharing this clone, run `git -C ../fieldnotes-skills pull --ff-only` from a project root.
+
+**Optional Superpowers workflows.** For brainstorming, planning and TDD alongside the full catalog, follow the [standalone native profile guide](profiles/native/README.md) to install the profile beside your project. Then keep both paths in this order:
+
+```json
+{
+  "skills": ["../fieldnotes-skills/skills", "../fieldnotes-skills-native/.agents/skills"]
+}
+```
+
+This gives OpenCode **52 distinct skills**: 37 from the catalog plus 15 Superpowers workflows. The 11 Fieldnotes skills also selected by `native` have the same IDs and resolve to the installed profile. To verify, use `$sources = @('../fieldnotes-skills/skills', '../fieldnotes-skills-native/.agents/skills')` as the first line of the check above. Expect `52/52 skills` followed by no differences. Use the native guide's update commands to refresh both sources.
 
 ## Use one skill
 

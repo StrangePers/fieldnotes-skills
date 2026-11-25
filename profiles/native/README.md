@@ -4,7 +4,7 @@ Use 26 skills for C++, Qt and everyday development from an existing SVN working 
 
 ## Install
 
-Start in the **parent directory of the SVN working copy**. Reuse your clone of `project-fieldnotes` if you already have one. The directory `fieldnotes-skills-native` is separate from the team workspace's `fieldnotes-native` directory, so you can try this profile alongside the team setup.
+Start in the **parent directory of the SVN working copy**. Skip either clone command if that repository is already present. The directory `fieldnotes-skills-native` is separate from the team workspace's `fieldnotes-native` directory, so you can try this profile alongside the team setup.
 
 ```powershell
 git clone https://github.com/StrangePers/project-fieldnotes.git
